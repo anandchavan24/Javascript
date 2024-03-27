@@ -24,15 +24,14 @@
         // 2.  Do the same using switch case
 
         switch (age) {
-            case a: {
-                console.log("Child")
-            }
-            case b: {
-                console.log("Teen")
-            }
-            case c: {
-                console.log("Adult")
-            }
+            case age <= 12:
+                console.log("child");
+                break;
+            case age >= 13 && age <= 18:
+                console.log("teen");
+                break;
+            default:
+                console.log("adult");
         }
 
 
