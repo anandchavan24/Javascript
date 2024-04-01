@@ -12,6 +12,12 @@ console.log("After assignment:", a); // Outputs: 10
 const b = "Hello";
 console.log("Value of b:", b); // Outputs: Hello
 
+// 'const' declarations must be initialized.ts(1155) if we do const b only
+
+//if we try to assign value to b again it throws an error like
+// Uncaught TypeError: Assignment to constant variable."
+
+
 let num = 5;
 let str = "Hello";
 let bool = true;
