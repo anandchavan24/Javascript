@@ -1,0 +1,34 @@
+1) Create a simple HTML file in notepad (do not use VSCode). To this, add some javascript by
+
+Writing javascript between script tags
+
+Writing javascript in a file and passing that as a src in the script tag
+
+2)
+Where to attach the script tag:   <html>
+<head></head>
+<body>
+<h1 id="test">Hello World!</h1>
+</body>
+</html>
+Given the above html, find out what happens when you try to access the element h1 in javascript (using document.getElementById) and change its content to “Goodbye World” when the script is attached:
+● in the head tag
+● at the start of the body tag
+● at the end of the body tag
+
+Answer ==>
+
+Attaching the script tag in the head tag:->
+
+When the script is attached in the head tag, and you try to access the element h1 in JavaScript using document.getElementById, it will not work as expected. This is because the script is executed before the DOM elements are fully loaded, so the h1 element might not exist at that point.
+Therefore, attempting to change its content to "Goodbye World" will result in an error or the script not having any effect on the h1 element.
+
+Attaching the script tag at the start of the body tag:->
+
+When the script is attached at the start of the body tag, and you try to access the element h1 in JavaScript using document.getElementById, it will work correctly. This is because the script is executed after the h1 element has been parsed and is available in the DOM.
+You can then change the content of the h1 element to "Goodbye World" successfully using JavaScript.
+
+Attaching the script tag at the end of the body tag:->
+
+Similar to attaching the script at the start of the body tag, when the script is attached at the end of the body tag, and you try to access the element h1 in JavaScript using document.getElementById, it will work as expected.
+The h1 element will be accessible, and you can change its content to "Goodbye World" using JavaScript without any issues.
