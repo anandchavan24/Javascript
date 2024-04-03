@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', fetchData());
+
+async function fetchData() {
     const userTableBody = document.getElementById('userTableBody');
     const searchInput = document.getElementById('searchInput');
     const loadingDiv = document.getElementById('loading');
@@ -61,13 +63,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         table.tBodies[0].append(...rows);
     };
-
-
     searchInputByUser(searchInput)
-
     // Initial render of users
     await renderUsers();
-});
+}
 
 
 function searchInputByUser(searchInput) {

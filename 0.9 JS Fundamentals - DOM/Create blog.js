@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+function fetchData() {
     const form = document.getElementById('blogForm');
     const responseDiv = document.getElementById('response');
 
@@ -26,4 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             responseDiv.innerHTML = '<p>Error submitting blog. Please try again later.</p>';
         }
     });
-});
+}
+
+document.addEventListener('DOMContentLoaded', fetchData());
+
+fetchData();
