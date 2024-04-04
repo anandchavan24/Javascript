@@ -28,6 +28,6 @@ function fetchData() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', fetchData());
-
-fetchData();
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData();
+});
